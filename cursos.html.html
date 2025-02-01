@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Header con banner y contenido centrado */
+    header {
+      background-image: url('banner.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 40rem;
+      position: relative;
+      color: white;
+    }
+    
+    /* Menú de navegación en el header */
+    header nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+    header nav a {
+      margin: 0 30px;
+      text-decoration: none;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    header nav a:hover {
+      transform: scale(1.1);
+      color: red;
+    }
+    
+    /* Contenido del header centrado sobre el banner */
+    .header-content {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .header-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+    }
+    .header-content h3,
+    .header-content p {
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+      margin: 4px 0;
+    }
+    
+    /* Main con fondo y contenido ordenado */
+    main {
+      background: linear-gradient(to right, #000000, #434343);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    main h2 {
+      color: white;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+    }
+    
+    /* Sección de cursos */
+    .courses {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+    
+    .course {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      max-width: 800px;
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+    }
+    
+    .course img {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+    }
+    
+    .course-info {
+      max-width: 400px;
+      text-align: justify;
+    }
+    
+    .course-info h3 {
+      color: white;
+      margin-bottom: 10px;
+    }
+    
+    .course-info p {
+      color: white;
+      margin: 5px 0;
+    }
+    
+    .course-info ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+    
+    .course-info ul li {
+      color: white;
+      margin: 5px 0;
+    }
+    
+    /* Botón "Leer más" estilizado como enlace */
+    .leer-mas {
+      display: inline-block;
+      background-color: #434343;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin-top: 10px;
+    }
+    .leer-mas:hover {
+      transform: scale(1.1);
+      background-color: orangered;
+    }
+    
+    /* Footer */
+    footer {
+      color: white;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #000000, #434343);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="principal.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header-content">
+      <h1>BlogDeCafé</h1>
+      <h3>Blog de café con consejos y cursos</h3>
+      <p>Aprende de los expertos con las mejores recetas y consejos</p>
+    </div>
+  </header>
+  <main>
+    <h2>Nuestros Próximos Cursos y Talleres</h2>
+    <section class="courses">
+      <!-- Curso 1: Técnica de extracción de café -->
+      <article class="course">
+        <img src="curso1.jpg" alt="Curso de técnica de extracción de café">
+        <div class="course-info">
+          <h3>Técnica de extracción de café</h3>
+          <p>Descubrí las técnicas esenciales para extraer el máximo sabor del café. Aprendé a diferenciar entre métodos tradicionales y modernos para disfrutar de un café perfecto.</p>
+          <ul>
+            <li><strong>Modalidad:</strong> Presencial</li>
+            <li><strong>Duración:</strong> 2 clases (90 min cada una)</li>
+            <li><strong>Cupo:</strong> 20 personas</li>
+            <li><strong>Costo:</strong> ¡Gratis!</li>
+          </ul>
+          <a class="leer-mas" href="curso1.html">Leer más</a>
+        </div>
+      </article>
+      <!-- Curso 2: Receta De Café Para Principiantes -->
+      <article class="course">
+        <img src="curso2.jpg" alt="Curso: Receta de Café Para Principiantes">
+        <div class="course-info">
+          <h3>Receta De Café Para Principiantes</h3>
+          <p>Iniciate en el mundo del café con recetas simples y deliciosas. Aprendé las bases de la extracción y las diferencias entre café filtrado y espresso, y descubrí cómo preparar un cappuccino cremoso o un latte con espuma perfecta.</p>
+          <ul>
+            <li><strong>Modalidad:</strong> Presencial y online</li>
+            <li><strong>Duración:</strong> 3 clases (90 min cada una)</li>
+            <li><strong>Cupo:</strong> 20 personas</li>
+            <li><strong>Costo:</strong> ¡Gratis!</li>
+          </ul>
+          <a class="leer-mas" href="curso2.html">Leer más</a>
+        </div>
+      </article>
+      <!-- Curso 3: Taller Para Tostar y Moler Granos -->
+      <article class="course">
+        <img src="curso3.jpg" alt="Taller Para Tostar y Moler Granos">
+        <div class="course-info">
+          <h3>Taller Para Tostar y Moler Granos</h3>
+          <p>Del grano a la taza: aprendé a tostar y moler tu propio café. Descubrí los secretos del tostado artesanal, la influencia del tiempo y la temperatura, y experimentá con distintos niveles de molienda para realzar los aromas de cada variedad.</p>
+          <ul>
+            <li><strong>Modalidad:</strong> Presencial</li>
+            <li><strong>Duración:</strong> 1 jornada intensiva (3 horas)</li>
+            <li><strong>Cupo:</strong> 15 personas</li>
+            <li><strong>Costo:</strong> ¡Gratis!</li>
+          </ul>
+          <a class="leer-mas" href="curso3.html">Leer más</a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Javier Pereyra. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

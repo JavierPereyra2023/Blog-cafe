@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas de Café en Argentina</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Header con banner y contenido centrado */
+    header {
+      background-image: url('banner.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 40rem;
+      position: relative;
+      color: white;
+    }
+    /* Menú de navegación en el header */
+    header nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+    header nav a {
+      margin: 0 30px;
+      text-decoration: none;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+      font-size: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    header nav a:hover {
+      transform: scale(1.1);
+      color: orangered;
+    }
+    /* Contenido del header centrado sobre el banner */
+    .header-content {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .header-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+    }
+    .header-content h3,
+    .header-content p {
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+      margin: 4px 0;
+    }
+    /* Main con fondo y contenido ordenado */
+    main {
+      background: linear-gradient(to right, #000000, #434343);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    main h2 {
+      color: white;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+    }
+    /* Contenedor para la imagen y el contenido textual */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+    }
+    .about-container img {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+    }
+    .about-container .text-content {
+      max-width: 600px;
+      color: white;
+      text-align: justify;
+      line-height: 1.6;
+    }
+    /* Estilo para el enlace que se muestra como botón */
+    .leer-mas {
+      display: inline-block;
+      background-color: #434343;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin-top: 20px;
+    }
+    .leer-mas:hover {
+      transform: scale(1.1);
+      background-color: orangered;
+    }
+    /* Footer */
+    footer {
+      color: white;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #000000, #434343);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="principal.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header-content">
+      <h1>BlogDeCafé</h1>
+      <h3>Blog de café con consejos y recetas</h3>
+      <p>Aprende de los expertos con las mejores recetas y consejos</p>
+    </div>
+  </header>
+  <main>
+    <h2>Recetas y Estilos de Café en Argentina</h2>
+    <div class="about-container">
+      <img src="cafe.avif" alt="Estilos de café">
+      <div class="text-content">
+        <p>
+          En Argentina, la cultura del café se vive en su máxima expresión, fusionando influencias internacionales con tradiciones locales. Las recetas y estilos varían desde el intenso espresso y el equilibrado cortado, hasta el cremoso café con leche que acompaña las mañanas y tardes en las cafeterías porteñas.
+        </p>
+        <p>
+          Las cafeterías argentinas han sabido aprovechar la creatividad culinaria para ofrecer preparaciones únicas, como el affogato (espresso con helado) o combinaciones innovadoras que integran sabores locales y postres artesanales. Esta diversidad permite que cada taza cuente una historia de sabor, pasión y tradición.
+        </p>
+        <p>
+          Descubrí cómo se elaboran estos estilos y cómo el café se ha convertido en un elemento esencial en la vida cotidiana de nuestro país, desde las reuniones familiares hasta los encuentros en cafés históricos. ¡Sumergite en el fascinante mundo de las recetas de café y dejate inspirar por la pasión argentina!
+        </p>
+      </div>
+    </div>
+    <a class="leer-mas" href="cursos.html">Link a los cursos</a>
+  </main>
+  <footer>
+    <p>© 2025 Javier Pereyra. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

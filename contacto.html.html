@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Header con banner y contenido centrado */
+    header {
+      background-image: url('banner.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 40rem;
+      position: relative;
+      color: white;
+    }
+    /* Menú de navegación en el header */
+    header nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+    header nav a {
+      margin: 0 30px;
+      text-decoration: none;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+      font-size: 20px;transition: transform 0.3s ease, color 0.3s ease;
+    }
+    header nav a:hover{transform: scale(1.1);color:orangered;}
+    
+    /* Contenido del header centrado sobre el banner */
+    .header-content {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .header-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+    }
+    .header-content h3,
+    .header-content p {
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+      margin: 4px 0;
+    }
+    /* Main con fondo y contenido ordenado */
+    main {
+      background: linear-gradient(to right, #000000, #434343);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    main h2 {
+      color: white;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 5px rgba(162, 155, 155, 0.7);
+    }
+    /* Contenedor para la imagen y el párrafo */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .about-container img {
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+    }
+    .about-container p {
+      width: 400px;
+      color: white;
+      text-align: justify;
+      margin: 0;
+    }
+    /* Sección de contacto (formulario) */
+    .seccion2 > h2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .seccion2 > form {
+      display: grid;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 200px;
+      margin: 0 auto;
+    }
+    .seccion2 > form > label {
+      color: white;
+    }
+    .seccion2 > form > input {
+      height: 30px;
+      border-radius: 4px;
+      color: orangered;
+      background: linear-gradient(to right, #000000, #555555);
+    }
+    .seccion2 > form > textarea {
+      background: linear-gradient(to right, #000000, #555555);
+    }
+    .seccion2 > form > button {
+      margin-top: 4px;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #000000, #555555);
+      border-radius: 4px;
+      height: 30px;
+      cursor: pointer;
+      color: white;
+      border: none;
+      transition: background 0.3s ease;
+    }
+    .seccion2 > form > button:hover {
+      background: orangered;
+    }
+    /* Footer */
+    footer {
+      color: white;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #000000, #434343);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="principal.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header-content">
+      <h1>BlogDeCafé</h1>
+      <h3>Blog de café con consejos y cursos</h3>
+      <p>Aprende de los expertos con las mejores recetas y consejos</p>
+    </div>
+  </header>
+  <main>
+    <h2>Contacto</h2>
+    <div class="about-container">
+      <img src="nosotros.jpg" alt="café con galletas">
+      <section class="seccion2">
+        <h2>Contacto</h2>
+        <form>
+          <label for="name">Tu Nombre</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Tu Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 Javier Pereyra. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
