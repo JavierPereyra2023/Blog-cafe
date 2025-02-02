@@ -117,11 +117,12 @@
       margin-top: 1rem;
       cursor: pointer;
       display: inline-block;
-      transition: transform 0.3s ease, color 0.3s ease;
+      transition: transform 0.3s ease, background-color 0.3s ease;
       transform: scale(1);  /* Estado por defecto */
     }
-    .leer-entrada:hover {background-color:orangered;
-      transform: scale(1.1); /* Se escala al pasar el puntero */
+    .leer-entrada:hover {
+      background-color: orangered;
+      transform: scale(1.1);
     }
     
     /* Estilos para el aside */
@@ -149,11 +150,13 @@
       border-radius: 4px;
       padding: 4px 8px;
       cursor: pointer;
-      transition: transform 0.3s ease, color 0.3s ease;
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
-    aside button:hover {background-color:orangered;
+    aside button:hover {
+      background-color: orangered;
       transform: scale(1.1);
     }
+    
     /* Espacio para el <hr> dentro del aside */
     aside div hr {
       margin: 1rem 0;
@@ -181,20 +184,18 @@
     <section class="seccion1">
       <div class="blog-post">
         <h3>Nuestro blog</h3>
-        <!-- Contenedor para la columna del blog y el aside -->
+        <!-- Contenedor para agrupar la columna del blog y el aside -->
         <div class="content-wrapper">
           <!-- Columna del blog (imagen, texto y botón) -->
           <div class="blog-column">
             <figure>
               <img src="imagenes/blog1.jpg" alt="Imagen del blog">
               <figcaption>
-                Descubrí el mundo del café ☕ y sus exquisitas combinaciones 
-En nuestro blog exploramos las mejores técnicas de preparación para extraer todo el sabor y aroma de cada grano. Desde métodos tradicionales como la prensa francesa y la moka, hasta la precisión del espresso y las tendencias modernas del café de especialidad. También te contamos qué delicias pueden acompañar tu café: croissants crujientes, chocolates amargos, bizcochos suaves y postres artesanales que realzan cada sorbo. Sumergite en este viaje sensorial y convertite en un verdadero amante del café. ¡Bienvenido a un espacio donde la pasión por el café se fusiona con el arte de disfrutarlo!
-
-
+                Descubrí el mundo del café ☕ y sus exquisitas combinaciones. En nuestro blog exploramos las mejores técnicas de preparación para extraer todo el sabor y aroma de cada grano. Desde métodos tradicionales como la prensa francesa y la moka, hasta la precisión del espresso y las tendencias modernas del café de especialidad. También te contamos qué delicias pueden acompañar tu café: croissants crujientes, chocolates amargos, bizcochos suaves y postres artesanales que realzan cada sorbo. Sumergite en este viaje sensorial y convertite en un verdadero amante del café. ¡Bienvenido a un espacio donde la pasión por el café se fusiona con el arte de disfrutarlo!
               </figcaption>
             </figure>
-            <button class="leer-entrada">Leer Entrada</button>
+            <!-- Botón "Leer Entrada" con enlace a cafe.html -->
+            <button class="leer-entrada" onclick="location.href='cafe.html'">Leer Entrada</button>
           </div>
           <!-- Aside con información adicional -->
           <aside>
@@ -202,13 +203,15 @@ En nuestro blog exploramos las mejores técnicas de preparación para extraer to
               <h4>Nuestros Cursos y Talleres</h4>
               <p>Precio: Gratis</p>
               <p>Cupo: 20</p>
-              <button>Más información</button>
+              <!-- Botón con enlace a curso_taller.html -->
+              <button onclick="location.href='curso_taller.html'">Más información</button>
             </div>
             <div>
               <h4>4 Recetas de Café Para Principiantes</h4>
               <p>Precio: Gratis</p>
               <p>Cupo: 20</p>
-              <button>Más información</button>
+              <!-- Botón con enlace a recetas.html -->
+              <button onclick="location.href='recetas.html'">Más información</button>
               <hr>
             </div>
           </aside>
